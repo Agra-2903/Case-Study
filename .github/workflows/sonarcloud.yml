@@ -61,4 +61,4 @@ jobs:
       - name: Build and analyze
         env:
           SONAR_TOKEN: d3e431c9a24572d8a5e2615c3da03f24346203e3 
-        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=Agra-2903_Case-Study
+        run: mvn -B clean verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=Agra-2903_Case-Study -Dsonar.organization=agra-2903
